@@ -1,7 +1,8 @@
 import ROOT, sys, os
 from ROOT import *
 
-path = "/afs/cern.ch/user/d/djamin/fcc_work/JetClustering/output/20180228_substructure_pt250_5000/"
+#path = "/afs/cern.ch/user/d/djamin/fcc_work/JetClustering/output/20180228_substructure_pt250_5000/"
+path = sys.argv[1]
 
 mass  = ["1000","2000","5000","10000"]
 proc  = ["qcd"  ,"wqq","zqq"   ]
