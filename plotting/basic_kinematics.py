@@ -44,7 +44,7 @@ for m in mass :
   c.cd(0)
 
   h0.SetTitle(m+" GeV")
-  h0.GetXaxis().SetTitle(leg_var[var.index(v)])
+  h0.GetXaxis().SetTitle(rec_gen+" "+leg_var[var.index(v)])
   h0.GetYaxis().SetTitle("Normalized to 1.")
 
   h0.GetXaxis().SetTitleOffset(1.1)
