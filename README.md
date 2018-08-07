@@ -2,7 +2,7 @@
 --------------------------
 First load the required environment on lxplus:
 ```
-source init.sh
+source ./init.sh
 ```
 Install fastjet (to be done only once):
 ```
@@ -15,7 +15,7 @@ Install fastjet (to be done only once):
 
 First load the required environment on lxplus:
 ```
-source init.sh
+source ./init.sh
 ```
 Compile analysis code (can be found and modified in ```src/analyze.cc```):
 
@@ -35,10 +35,10 @@ e.g:
 []() LSF submission
 --------------------
 
-The script ```batch/submitJetClustering.py``` allows to run this script on LSF queues:
+The script ```batch/submitJetClustering.py``` allows to run this script on LSF queues. You must submit the command from the batch/ directory :
 
 ```
-python batch/submitJetClustering.py -i [NTUP_dir] -n [nevts_per_job] -o [output_dir] --njobs [number_of_jobs] -q [queue]
+python submitJetClustering.py -i [NTUP_dir] -n [nevts_per_job] -o [output_dir] --njobs [number_of_jobs] -q [queue]
 ```
 
 Jobs can be collected via:
